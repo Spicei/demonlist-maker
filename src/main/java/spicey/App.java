@@ -21,11 +21,9 @@ import javax.swing.*;
 import spicey.SheetsGanderer.Demon;
 
 import java.util.Base64;
-import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.FlowLayout;
 import java.awt.Toolkit;
-import java.awt.event.*;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.HashMap;

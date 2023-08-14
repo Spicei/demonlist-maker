@@ -1,0 +1,381 @@
+#     Level Name             Demon Type      GDDL Difficulty
+================================================================
+1.    Aquatic Auroras      - Extreme Demon - 31.0
+2.    Artificial Ascent    - Extreme Demon - 28.0
+3.    Balengu Vortex       - Extreme Demon - 27.5
+4.    Killbot              - Extreme Demon - 27.22
+5.    Black Blizzard       - Extreme Demon - 27.0
+6.    Blade of Justice     - Extreme Demon - 25.0
+7.    Bloodbath            - Extreme Demon - 24.36
+8.    Prismatic Haze       - Extreme Demon - 24.0
+9.    INNARDS              - Extreme Demon - 23.33
+10.   aftermath            - Extreme Demon - 23.0
+11.   Heartbeat            - Extreme Demon - 23.0
+12.   KINGSLAYER           - Extreme Demon - 23.0
+13.   Cat Planet           - Extreme Demon - 22.8
+14.   Red World Rebirth    - Extreme Demon - 22.0
+15.   HURRICANE            - Extreme Demon - 22.0
+16.   Allegiance           - Extreme Demon - 21.68
+17.   Faith                - Extreme Demon - 21.6
+18.   Retention            - Extreme Demon - 21.53
+19.   I NEVER DREAM        - Extreme Demon - 21.4
+20.   CYCLONE              - Extreme Demon - 21.36
+21.   Forbidden Isle       - Extreme Demon - 21.11
+22.   Cataclysm            - Extreme Demon - 20.95
+23.   Azurite              - Extreme Demon - 20.91
+24.   HyperSonic           - Extreme Demon - 20.9
+25.   Incipient            - Extreme Demon - 20.85
+26.   troll level          - Extreme Demon - 20.7
+27.   Reverie              - Insane Demon  - 20.6
+28.   Acu                  - Extreme Demon - 20.36
+29.   Thanatophobia        - Insane Demon  - 20.01
+30.   MOTHMELONS           - Insane Demon  - 19.92
+31.   Excessive Compliment - Insane Demon  - 19.91
+32.   ICE Carbon Diablo X  - Insane Demon  - 19.82
+33.   CMYK                 - Insane Demon  - 19.6
+34.   Arcadelocked         - Insane Demon  - 19.5
+35.   Optic daydream       - Insane Demon  - 19.0
+36.   Deadlocked v2        - Insane Demon  - 19.0
+37.   hi                   - Insane Demon  - 18.93
+38.   Plasma Pulse II      - Insane Demon  - 18.83
+39.   Crimson Clutter      - Insane Demon  - 18.76
+40.   kidsmoke             - Insane Demon  - 18.4
+41.   UltraSonic           - Insane Demon  - 18.25
+42.   Leyak                - Insane Demon  - 18.25
+43.   Spectral Tentation   - Insane Demon  - 18.23
+44.   Necropolis           - Insane Demon  - 18.2
+45.   Temple of Destiny    - Insane Demon  - 18.18
+46.   Lunatic Doom Machine - Insane Demon  - 18.04
+47.   The Secret Box       - Insane Demon  - 17.89
+48.   Flat Major           - Insane Demon  - 17.72
+49.   Future Funk II       - Insane Demon  - 17.53
+50.   X Adventure          - Insane Demon  - 17.52
+51.   Bit Reaper           - Insane Demon  - 17.5
+52.   BuTiTi II            - Insane Demon  - 17.5
+53.   H B F S              - Insane Demon  - 17.5
+54.   Acropolis            - Insane Demon  - 17.38
+55.   Sadism               - Insane Demon  - 17.38
+56.   Night Terrors        - Insane Demon  - 17.12
+57.   Hyperio Technia      - Insane Demon  - 17.03
+58.   Rearmed              - Insane Demon  - 17.0
+59.   Firewall             - Insane Demon  - 16.83
+60.   Arcane               - Insane Demon  - 16.76
+61.   Supersonic           - Insane Demon  - 16.73
+62.   8o                   - Insane Demon  - 16.73
+63.   classic              - Insane Demon  - 16.31
+64.   Fishbass             - Insane Demon  - 16.31
+65.   Lit Fuse             - Insane Demon  - 16.24
+66.   Rupture              - Insane Demon  - 16.22
+67.   Shallow Dive         - Insane Demon  - 16.22
+68.   CHROMA               - Insane Demon  - 16.14
+69.   Carp Minor           - Insane Demon  - 16.09
+70.   Hubert Jenkins       - Insane Demon  - 16.0
+71.   SupremeLocked        - Insane Demon  - 16.0
+72.   Poltergeist          - Insane Demon  - 15.82
+73.   The Four Elements    - Insane Demon  - 15.7
+74.   Plasma Pulse         - Insane Demon  - 15.69
+75.   Super Mario Wave     - Insane Demon  - 15.67
+76.   Windy Landscape      - Insane Demon  - 15.6
+77.   Buff This            - Insane Demon  - 15.6
+78.   Stereo Demoness      - Insane Demon  - 15.59
+79.   Stalemate            - Insane Demon  - 15.49
+80.   Magma Bound          - Insane Demon  - 15.46
+81.   CraZy II             - Insane Demon  - 15.42
+82.   Sharp Minor          - Insane Demon  - 15.33
+83.   1929                 - Insane Demon  - 15.33
+84.   Ultimate Demon Mix   - Insane Demon  - 15.3
+85.   Diffuse              - Hard Demon    - 15.25
+86.   Psychosis            - Hard Demon    - 14.99
+87.   Mastermind           - Insane Demon  - 14.87
+88.   The Furious          - Hard Demon    - 14.66
+89.   Forest Temple        - Hard Demon    - 14.15
+90.   ARANEO               - Hard Demon    - 14.13
+91.   Speed RaXer          - Hard Demon    - 14.0
+92.   Windy Circles        - Hard Demon    - 13.67
+93.   Fairydust            - Hard Demon    - 13.63
+94.   CraZy                - Hard Demon    - 13.36
+95.   Deadly ClubStep      - Hard Demon    - 13.27
+96.   Sparkling Hope       - Hard Demon    - 13.19
+97.   overnight            - Hard Demon    - 13.15
+98.   Deadlocked X         - Hard Demon    - 13.0
+99.   Spacelocked          - Hard Demon    - 12.93
+100.  Breakthrough         - Hard Demon    - 12.9
+101.  Aleph 0              - Hard Demon    - 12.88
+102.  Future Funk          - Hard Demon    - 12.82
+103.  Future Funk          - Hard Demon    - 12.82
+104.  Dance Massacre       - Hard Demon    - 12.65
+105.  Two Invisible Eyes   - Hard Demon    - 12.6
+106.  At The Top           - Hard Demon    - 12.39
+107.  Forsaken Neon        - Hard Demon    - 12.27
+108.  ObamA RebirtH        - Hard Demon    - 12.24
+109.  Double Dash          - Hard Demon    - 12.21
+110.  The Caverns          - Hard Demon    - 12.13
+111.  Sedulous             - Hard Demon    - 12.08
+112.  Desert Temple        - Hard Demon    - 12.05
+113.  widder               - Hard Demon    - 12.0
+114.  in rainbows          - Hard Demon    - 11.97
+115.  Shadow Temple        - Hard Demon    - 11.86
+116.  Pain Elemental       - Hard Demon    - 11.84
+117.  MasterLocked         - Hard Demon    - 11.75
+118.  ToE II v2            - Hard Demon    - 11.62
+119.  Radioactive          - Hard Demon    - 11.62
+120.  LastLocked           - Hard Demon    - 11.5
+121.  Temple of Time       - Hard Demon    - 11.48
+122.  Water Temple         - Hard Demon    - 11.41
+123.  Nine Circles         - Hard Demon    - 11.29
+124.  Ditched Machine      - Hard Demon    - 11.21
+125.  Jawbreaker           - Hard Demon    - 11.19
+126.  Come a Little Closer - Hard Demon    - 11.0
+127.  white women          - Hard Demon    - 10.81
+128.  pg clubstep          - Hard Demon    - 10.8
+129.  Foxtrox              - Hard Demon    - 10.57
+130.  Nowise               - Hard Demon    - 10.53
+131.  Technolocked         - Hard Demon    - 10.5
+132.  prompt               - Hard Demon    - 10.28
+133.  Darkness Keeper      - Hard Demon    - 10.08
+134.  Megalovania          - Hard Demon    - 10.03
+135.  Judgement            - Medium Demon  - 9.83
+136.  Chaoz Airflow        - Medium Demon  - 9.73
+137.  Resurrection         - Medium Demon  - 9.63
+138.  Fire Temple          - Hard Demon    - 9.62
+139.  Dark Dungeon         - Medium Demon  - 9.05
+140.  Lava Temple          - Medium Demon  - 9.04
+141.  InsanitY             - Medium Demon  - 9.0
+142.  Bloodbath Z          - Medium Demon  - 8.93
+143.  Malware              - Medium Demon  - 8.92
+144.  Ride                 - Medium Demon  - 8.88
+145.  deadlocked v2        - Medium Demon  - 8.75
+146.  Thermodynamix        - Hard Demon    - 8.5
+147.  Ascend               - Medium Demon  - 8.4
+148.  Deadlocked 2017      - Hard Demon    - 8.27
+149.  HeLL                 - Medium Demon  - 8.14
+150.  The Realistic        - Medium Demon  - 8.1
+151.  Hellcat              - Medium Demon  - 7.98
+152.  Scarlet Smog         - Medium Demon  - 7.98
+153.  Hexagon Force v2     - Medium Demon  - 7.96
+154.  Nitrogen             - Medium Demon  - 7.82
+155.  Bassboost            - Medium Demon  - 7.79
+156.  old rust dont dry    - Medium Demon  - 7.78
+157.  chorky               - Medium Demon  - 7.67
+158.  Gy                   - Medium Demon  - 7.67
+159.  Chaoz Airflow        - Medium Demon  - 7.59
+160.  Based                - Medium Demon  - 7.57
+161.  potal                - Medium Demon  - 7.56
+162.  Windings             - Medium Demon  - 7.55
+163.  Nantendo             - Medium Demon  - 7.54
+164.  time fortress        - Medium Demon  - 7.5
+165.  Ripplez Adventures   - Medium Demon  - 7.41
+166.  Figures              - Medium Demon  - 7.4
+167.  Toxic Sewers         - Medium Demon  - 7.36
+168.  Sakupen Egg          - Medium Demon  - 7.33
+169.  VeritY               - Medium Demon  - 7.29
+170.  INSERT COIN          - Medium Demon  - 7.18
+171.  Fool                 - Medium Demon  - 7.0
+172.  Astronaut 14         - Medium Demon  - 7.0
+173.  Deadlocked V2        - Hard Demon    - 7.0
+174.  red dart             - Medium Demon  - 6.96
+175.  Mechanical Showdown  - Medium Demon  - 6.91
+176.  pain plant           - Medium Demon  - 6.88
+177.  Acid Rush II         - Medium Demon  - 6.83
+178.  Bass                 - Medium Demon  - 6.8
+179.  Tengu Wind           - Medium Demon  - 6.76
+180.  ForceDynamix         - Medium Demon  - 6.71
+181.  Mountain King        - Medium Demon  - 6.69
+182.  Reanimation          - Medium Demon  - 6.68
+183.  Electrodynamix v2    - Medium Demon  - 6.63
+184.  Gold Temple          - Medium Demon  - 6.63
+185.  System Split         - Medium Demon  - 6.61
+186.  Clubstep v2          - Medium Demon  - 6.54
+187.  DeathFunk            - Medium Demon  - 6.51
+188.  Collab Level         - Hard Demon    - 6.45
+189.  Space Magic          - Medium Demon  - 6.43
+190.  Gear III             - Medium Demon  - 6.38
+191.  Section              - Medium Demon  - 6.31
+192.  LasoGoco             - Medium Demon  - 6.0
+193.  Paracosm Circles     - Medium Demon  - 5.87
+194.  Cant Let vulc        - Medium Demon  - 5.86
+195.  Space Meow           - Easy Demon    - 5.65
+196.  Secret Box           - Medium Demon  - 5.63
+197.  B                    - Medium Demon  - 5.6
+198.  Draconic Speed       - Medium Demon  - 5.6
+199.  Sidestep             - Easy Demon    - 5.33
+200.  Natural step         - Medium Demon  - 5.28
+201.  Zafari               - Medium Demon  - 5.09
+202.  Sidewalk             - Easy Demon    - 4.86
+203.  Collapse             - Easy Demon    - 4.85
+204.  hell and heaven      - Medium Demon  - 4.8
+205.  Beautiful Chaos      - Medium Demon  - 4.8
+206.  Wild West            - Easy Demon    - 4.72
+207.  Mechanic Downforce   - Easy Demon    - 4.69
+208.  VOICE                - Easy Demon    - 4.67
+209.  Metal Genesis        - Easy Demon    - 4.63
+210.  wowzers holy         - Easy Demon    - 4.51
+211.  Nemesis              - Easy Demon    - 4.49
+212.  Extinction           - Easy Demon    - 4.44
+213.  StarQuake            - Easy Demon    - 4.43
+214.  Fast n Spicy         - Easy Demon    - 4.38
+215.  DeCode               - Easy Demon    - 4.37
+216.  Hootenanny           - Easy Demon    - 4.33
+217.  madvillany           - Medium Demon  - 4.2
+218.  Electrical Room      - Easy Demon    - 4.14
+219.  Star Chaser          - Easy Demon    - 4.0
+220.  kr1tmas              - Easy Demon    - 4.0
+221.  Running in the 90s   - Easy Demon    - 3.95
+222.  Hyper Fantasy        - Easy Demon    - 3.92
+223.  Extreme Fantasy      - Easy Demon    - 3.92
+224.  Death Moon           - Easy Demon    - 3.88
+225.  Ultimate Circles     - Easy Demon    - 3.87
+226.  Chaoz Impact         - Easy Demon    - 3.82
+227.  Slap Squad           - Easy Demon    - 3.81
+228.  Buck Force           - Easy Demon    - 3.79
+229.  Trump Circles        - Easy Demon    - 3.78
+230.  Flappy Weird         - Easy Demon    - 3.75
+231.  Motion               - Easy Demon    - 3.74
+232.  Gotta Go FAST        - Easy Demon    - 3.67
+233.  My style is no style - Easy Demon    - 3.67
+234.  Zircon               - Easy Demon    - 3.67
+235.  PsyWorm              - Easy Demon    - 3.65
+236.  DICHOTOMY            - Easy Demon    - 3.63
+237.  Despacito OMG OwO    - Easy Demon    - 3.6
+238.  12 Clutterfunk       - Easy Demon    - 3.59
+239.  Dimension Machine    - Easy Demon    - 3.54
+240.  Dear Nostalgists     - Easy Demon    - 3.48
+241.  FREEDOM              - Easy Demon    - 3.43
+242.  Hue Effect           - Easy Demon    - 3.42
+243.  Glitched Dreams      - Easy Demon    - 3.4
+244.  Silhouette Summit    - Easy Demon    - 3.38
+245.  Problematic          - Easy Demon    - 3.37
+246.  100 Miles and Runnin - Easy Demon    - 3.36
+247.  Meow                 - Easy Demon    - 3.35
+248.  Inferno              - Easy Demon    - 3.33
+249.  Oblivion             - Easy Demon    - 3.33
+250.  MalFunction          - Easy Demon    - 3.33
+251.  Strangers            - Easy Demon    - 3.31
+252.  Tabasco              - Easy Demon    - 3.31
+253.  Restricted Area      - Easy Demon    - 3.27
+254.  All Inside My Dreams - Easy Demon    - 3.25
+255.  Lust                 - Easy Demon    - 3.25
+256.  Desolate Deep        - Easy Demon    - 3.25
+257.  Lodgepace            - Easy Demon    - 3.22
+258.  X                    - Easy Demon    - 3.21
+259.  Yuuta                - Easy Demon    - 3.17
+260.  Azure Apex           - Easy Demon    - 3.17
+261.  in Silico            - Easy Demon    - 3.15
+262.  mushroom salad       - Easy Demon    - 3.14
+263.  Voyager              - Easy Demon    - 3.14
+264.  Space Circles        - Easy Demon    - 3.13
+265.  Dora Dance           - Easy Demon    - 3.13
+266.  Buried Angel         - Easy Demon    - 3.12
+267.  ph0ne m3 f1rst       - Medium Demon  - 3.11
+268.  Flash Flame          - Easy Demon    - 3.11
+269.  Horizon              - Easy Demon    - 3.1
+270.  time pressure        - Easy Demon    - 3.07
+271.  Outbreak             - Easy Demon    - 3.07
+272.  Retro Circles        - Easy Demon    - 3.05
+273.  Endorphin Rush       - Easy Demon    - 3.03
+274.  demon park           - Easy Demon    - 3.01
+275.  Getting Far          - Easy Demon    - 3.0
+276.  HELLFIRE             - Easy Demon    - 3.0
+277.  RUSH HOUR            - Easy Demon    - 3.0
+278.  Toxicity             - Easy Demon    - 3.0
+279.  SMOOTH               - Easy Demon    - 3.0
+280.  cyber paradise       - Easy Demon    - 3.0
+281.  Laser Room           - Easy Demon    - 2.98
+282.  TiBuTi               - Easy Demon    - 2.96
+283.  Broken Gameboy       - Easy Demon    - 2.93
+284.  FIRE SPIRE           - Easy Demon    - 2.92
+285.  Futurelocked         - Easy Demon    - 2.89
+286.  rotten core          - Easy Demon    - 2.88
+287.  Cobalt Ruins         - Easy Demon    - 2.84
+288.  FOUR WHEEL DRIVE     - Easy Demon    - 2.84
+289.  Blizzard             - Easy Demon    - 2.83
+290.  absolute  zero       - Easy Demon    - 2.79
+291.  Clutterfunk v2       - Easy Demon    - 2.77
+292.  Spark                - Easy Demon    - 2.76
+293.  Bit Breaker          - Easy Demon    - 2.75
+294.  Neo                  - Easy Demon    - 2.75
+295.  NothinG              - Easy Demon    - 2.71
+296.  Steam Chamber        - Easy Demon    - 2.7
+297.  ClutterStep          - Easy Demon    - 2.69
+298.  Etoilys              - Easy Demon    - 2.67
+299.  AmazoN               - Easy Demon    - 2.62
+300.  Inspirative          - Easy Demon    - 2.6
+301.  Virtualization       - Easy Demon    - 2.6
+302.  invisible clubstep   - Easy Demon    - 2.58
+303.  Wack                 - Easy Demon    - 2.58
+304.  Ship                 - Easy Demon    - 2.58
+305.  The Death Moon       - Easy Demon    - 2.57
+306.  Cool                 - Easy Demon    - 2.57
+307.  FUNKED UP            - Easy Demon    - 2.55
+308.  Sinless Ash          - Easy Demon    - 2.5
+309.  moon adventure       - Easy Demon    - 2.49
+310.  Sky Realm            - Easy Demon    - 2.47
+311.  Mirror Force         - Easy Demon    - 2.39
+312.  infinite circles     - Easy Demon    - 2.37
+313.  WorsT LvL EveR MadE  - Easy Demon    - 2.33
+314.  Obsolete             - Easy Demon    - 2.33
+315.  Original Version     - Easy Demon    - 2.33
+316.  Clubdrop             - Easy Demon    - 2.31
+317.  Requiem              - Easy Demon    - 2.3
+318.  Chaotic              - Easy Demon    - 2.29
+319.  MAYMORY              - Easy Demon    - 2.28
+320.  BRAINWAVE            - Easy Demon    - 2.27
+321.  DarnocDynamix        - Easy Demon    - 2.26
+322.  dune                 - Easy Demon    - 2.25
+323.  Speed of Light       - Easy Demon    - 2.24
+324.  God Yeeter           - Easy Demon    - 2.24
+325.  Broken Roulette      - Easy Demon    - 2.24
+326.  Ultra Paracosm       - Easy Demon    - 2.23
+327.  ddays                - Easy Demon    - 2.22
+328.  Theory of every v2   - Easy Demon    - 2.19
+329.  Crazy Bolt           - Easy Demon    - 2.19
+330.  JUMPGRIND3R          - Easy Demon    - 2.19
+331.  Electroman Adven v2  - Easy Demon    - 2.18
+332.  Insomnia             - Easy Demon    - 2.17
+333.  Pain                 - Easy Demon    - 2.17
+334.  Blussnes             - Easy Demon    - 2.1
+335.  GluttonY             - Easy Demon    - 2.07
+336.  neXus                - Easy Demon    - 2.06
+337.  Five nights Pollapo  - Easy Demon    - 2.05
+338.  Acedia               - Easy Demon    - 2.0
+339.  Terminal of Impact   - Easy Demon    - 2.0
+340.  Reflect              - Easy Demon    - 2.0
+341.  BuriaL TombS         - Easy Demon    - 1.96
+342.  Blue Hell            - Easy Demon    - 1.94
+343.  Super Cycles         - Easy Demon    - 1.92
+344.  Electro rand         - Easy Demon    - 1.91
+345.  iSpyWithMyLittleEye  - Easy Demon    - 1.91
+346.  yStep                - Easy Demon    - 1.89
+347.  Sweet Melody         - Easy Demon    - 1.89
+348.  Slap Squad II        - Easy Demon    - 1.88
+349.  abstraction          - Easy Demon    - 1.86
+350.  distortt             - Easy Demon    - 1.86
+351.  Archaic Artifacts    - Easy Demon    - 1.83
+352.  Crescendo            - Easy Demon    - 1.8
+353.  Speed Racer          - Easy Demon    - 1.78
+354.  SpLevel              - Easy Demon    - 1.78
+355.  Xstep v2             - Easy Demon    - 1.75
+356.  Hextec Flow          - Easy Demon    - 1.74
+357.  lightning vortex     - Easy Demon    - 1.7
+358.  weird hell           - Easy Demon    - 1.7
+359.  Impulse              - Easy Demon    - 1.67
+360.  Impact X             - Easy Demon    - 1.66
+361.  Lights And Thunder   - Easy Demon    - 1.63
+362.  Ice of dawn          - Easy Demon    - 1.63
+363.  Bwomp Processing     - Easy Demon    - 1.57
+364.  Robot Upgrade        - Easy Demon    - 1.56
+365.  Time flies           - Easy Demon    - 1.53
+366.  STARPUNK             - Easy Demon    - 1.4
+367.  Kinemortophobia      - Easy Demon    - 1.39
+368.  phjork               - Easy Demon    - 1.33
+369.  Freaks               - Easy Demon    - 1.33
+370.  demon jumper         - Easy Demon    - 1.24
+371.  iS                   - Easy Demon    - 1.24
+372.  Cybersphere          - Easy Demon    - 1.23
+373.  PLAY WITH FIRE       - Easy Demon    - 1.22
+374.  GG                   - Easy Demon    - 1.17
+375.  Platinum Adventure   - Easy Demon    - 1.13
+376.  distal corridor      - Easy Demon    - 1.12
+377.  demon mixed          - Easy Demon    - 1.1
+378.  THE LIGHTNING ROAD   - Easy Demon    - 1.03
+379.  The Nightmare        - Easy Demon    - 1.01
