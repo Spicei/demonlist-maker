@@ -1,5 +1,9 @@
 # demonlist-maker
 
+Orders all of your completed demons by difficulty so you can have your own demonlist thats why I called it that
+
+# How
+
 Uses patented CCGameManager.dat save file reader technology to gather your save data
 
 Decrypts your save file using Absolute's save file decrypter code which i stole (https://pastebin.com/JakxXUVG)
