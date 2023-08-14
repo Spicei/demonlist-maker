@@ -21,8 +21,10 @@ import javax.swing.*;
 import spicey.SheetsGanderer.Demon;
 
 import java.util.Base64;
+import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.FlowLayout;
+import java.awt.Image;
 import java.awt.Toolkit;
 import java.util.Collections;
 import java.util.Comparator;
@@ -67,6 +69,7 @@ public final class App {
         progressBar.setForeground(java.awt.Color.green);
 
         progressBar.setValue(0);
+        progressBar.setBorder(BorderFactory.createLineBorder(Color.LIGHT_GRAY));
         progressBar.setPreferredSize(new Dimension((int) (screen.width * 0.15), (int) (screen.height * 0.025)));
 
         JLabel explainer = new JLabel("Starting...");
@@ -80,7 +83,9 @@ public final class App {
         frame.add(progressBar);
         frame.add(explainer);
         frame.setTitle("Demonlist Maker");
-        frame.setIconImage(ImageIO.read(URI.create("https://i.redd.it/9pvybldgjym51.jpg").toURL()));
+        frame.setIconImage(ImageIO.read(URI.create(
+                "https://i.redd.it/4vt17p57bs091.png")
+                .toURL()).getScaledInstance(64, 64, Image.SCALE_AREA_AVERAGING));
         frame.setVisible(true);
 
         String savePath = System.getenv("LOCALAPPDATA") + "\\GeometryDash\\CCGameManager.dat";
