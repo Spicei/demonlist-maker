@@ -1,6 +1,7 @@
 # demonlist-maker
 
 Orders all of your completed demons by difficulty so you can have your own demonlist thats why I called it that
+see the example list above with my own stuff
 
 # How
 
