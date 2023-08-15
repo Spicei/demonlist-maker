@@ -2,19 +2,21 @@ package spicey;
 
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
 public class SaveLooker {
-    public List<String> parseSave() throws FileNotFoundException {
+    public List<String> parseSave() throws IOException {
         List<String> levelsList = new ArrayList<>();
 
         Scanner scan = new Scanner(new File("DecryptedSave.txt"));
-        String saveFileText = "";
+        String decryptedSave = "";
 
         while (scan.hasNext()) {
-            saveFileText += scan.next();
+            decryptedSave += scan.next();
         }
 
         scan.close();
@@ -22,21 +24,21 @@ public class SaveLooker {
         int currentPosition = 0;
         String currentLevel;
 
-        while (saveFileText.indexOf("</d>", currentPosition) != -1) {
+        while (decryptedSave.indexOf("</d>", currentPosition) != -1) {
 
             if (currentPosition % 100000 < 5) {
                 // System.out.println(currentPosition + "/" + lengthOfFile);
             }
-            int nextStart = saveFileText.indexOf("<d>", currentPosition);
-            int nextEnd = saveFileText.indexOf("</d>", currentPosition);
+            int nextStart = decryptedSave.indexOf("<d>", currentPosition);
+            int nextEnd = decryptedSave.indexOf("</d>", currentPosition);
             if (nextStart >= nextEnd) { // if robtop brain made out of mush
                 // System.out.println("start: " + nextStart);
                 // System.out.println("end: " + nextEnd);
-                nextEnd = saveFileText.indexOf("</d>", nextEnd + 1);
+                nextEnd = decryptedSave.indexOf("</d>", nextEnd + 1);
                 // System.out.println("new end: " + nextEnd);
 
             }
-            currentLevel = saveFileText.substring(nextStart, nextEnd);
+            currentLevel = decryptedSave.substring(nextStart, nextEnd);
 
             if (currentLevel.contains("<k>k1</k>")) { // k1 = container where id is found if no id container then the
                                                       // <d> is not a level
@@ -61,7 +63,7 @@ public class SaveLooker {
                 // nameContainer.length()));
 
             }
-            currentPosition = saveFileText.indexOf("</d>", currentPosition) + 1;
+            currentPosition = decryptedSave.indexOf("</d>", currentPosition) + 1;
         }
 
         return levelsList;

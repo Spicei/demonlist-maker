@@ -103,6 +103,8 @@ public final class App {
         System.out.println("Decrypting Save File...");
         startTime = System.currentTimeMillis();
         byte[] fin = Decrypt(res);
+        String dCrip = new String(fin, StandardCharsets.UTF_8);
+
         OutputStream out = new FileOutputStream(new File("DecryptedSave.txt"));
         for (byte b : fin) {
             out.write(b);
@@ -171,20 +173,37 @@ public final class App {
     }
 
     public static String Xor(String path, int key) throws IOException {
-        ArrayList<Integer> res = new ArrayList<>();
-        InputStream inputStream = new FileInputStream(new File(path));
-        ByteArrayOutputStream birayoutstream = new ByteArrayOutputStream();
-        int byteRead = -1;
+        // ArrayList<Integer> res = new ArrayList<>();
+        // InputStream inputStream = new FileInputStream(new File(path));
+        // ByteArrayOutputStream birayoutstream = new ByteArrayOutputStream();
+        // int byteRead = -1;
 
-        while ((byteRead = inputStream.read()) != -1) {
-            res.add(byteRead ^ key);
+        // while ((byteRead = inputStream.read()) != -1) {
+        // res.add(byteRead ^ key);
+
+        // }
+
+        // for (Integer bytey : res) {
+        // birayoutstream.write(bytey);
+        // }
+        // byte[] bytes = birayoutstream.toByteArray();
+        // for (byte b : bytes) {
+        // System.out.println(b);
+        // }
+
+        InputStream iStream = new FileInputStream(path);
+        long fileSize = new File(path).length();
+        byte[] allBytes = new byte[(int) fileSize];
+        int bytesRead = iStream.read(allBytes);
+        iStream.close();
+        String byteString = new String(allBytes, StandardCharsets.UTF_8);
+        for (int bite = 0; bite < allBytes.length; bite++) {
+            int bigger = Byte.toUnsignedInt(allBytes[bite]) ^ key;
+            allBytes[bite] = ((byte) bigger);
+
         }
 
-        for (Integer bytey : res) {
-            birayoutstream.write(bytey);
-        }
-        birayoutstream.toByteArray();
-        return new String(birayoutstream.toByteArray(), StandardCharsets.UTF_8);
+        return new String(allBytes, StandardCharsets.UTF_8);
     }
 
     public static byte[] Decrypt(String data) throws DataFormatException {
