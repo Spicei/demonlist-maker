@@ -9,17 +9,23 @@ import java.util.List;
 import java.util.Scanner;
 
 public class SaveLooker {
-    public List<String> parseSave() throws IOException {
+    public List<String> parseSave(String decrypted) throws IOException {
         List<String> levelsList = new ArrayList<>();
 
-        Scanner scan = new Scanner(new File("DecryptedSave.txt"));
+        // Scanner scan = new Scanner(new File("DecryptedSave.txt"));
+
+        // while (scan.hasNext()) {
+        // decryptedSave += scan.next();
+        // }
+
+        // scan.close();
+        // System.out.println(decrypted.substring(0, 5000));
+        // System.out.println();
+        // System.out.println((decryptedSave.substring(0, 5000)));
+        // System.out.println(decrypted.length());
+        // System.out.println(decryptedSave.length());
         String decryptedSave = "";
-
-        while (scan.hasNext()) {
-            decryptedSave += scan.next();
-        }
-
-        scan.close();
+        decryptedSave = decrypted.replaceAll(" ", "");
 
         int currentPosition = 0;
         String currentLevel;

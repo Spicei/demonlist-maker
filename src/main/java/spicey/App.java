@@ -11,6 +11,7 @@ import java.io.OutputStream;
 import java.net.URI;
 import java.nio.charset.StandardCharsets;
 import java.security.GeneralSecurityException;
+import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.zip.DataFormatException;
 import java.util.zip.Inflater;
@@ -24,6 +25,7 @@ import java.util.Base64;
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.FlowLayout;
+
 import java.awt.Image;
 import java.awt.Toolkit;
 import java.util.Collections;
@@ -56,6 +58,7 @@ public final class App {
     // k3 - description (in base 64)
 
     public static void main(String[] args) throws IOException, DataFormatException, GeneralSecurityException {
+
         Dimension screen = Toolkit.getDefaultToolkit().getScreenSize();
 
         JFrame frame = new JFrame();
@@ -105,10 +108,10 @@ public final class App {
         byte[] fin = Decrypt(res);
         String dCrip = new String(fin, StandardCharsets.UTF_8);
 
-        OutputStream out = new FileOutputStream(new File("DecryptedSave.txt"));
-        for (byte b : fin) {
-            out.write(b);
-        }
+        // OutputStream out = new FileOutputStream(new File("DecryptedSave.txt"));
+        // for (byte b : fin) {
+        // out.write(b);
+        // }
         System.out.println("Save File Decrypted in " + ((System.currentTimeMillis() - startTime) / 1000) + " seconds!");
         System.out.println();
 
@@ -117,7 +120,7 @@ public final class App {
         progressBar.setValue(60);
         System.out.println("Looking for your completed levels in save file....");
         startTime = System.currentTimeMillis();
-        List<String> userCompletedIDs = saveLooker.parseSave();
+        List<String> userCompletedIDs = saveLooker.parseSave(dCrip);
         System.out.println("Found " + userCompletedIDs.size() + " completed levels in "
                 + ((System.currentTimeMillis() - startTime) / 1000) + " seconds");
         System.out.println();
