@@ -1,23 +1,25 @@
 package spicey;
 
-import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.FileInputStream;
-import java.io.FileOutputStream;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStream;
-import java.io.OutputStream;
 import java.net.URI;
+import java.net.URISyntaxException;
 import java.nio.charset.StandardCharsets;
 import java.security.GeneralSecurityException;
-import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.zip.DataFormatException;
 import java.util.zip.Inflater;
 
 import javax.imageio.ImageIO;
 import javax.swing.*;
+import javax.swing.text.BadLocationException;
+
+import org.jsoup.nodes.Document;
+import org.jsoup.nodes.Element;
+import org.jsoup.select.Elements;
 
 import spicey.SheetsGanderer.Demon;
 
@@ -52,12 +54,13 @@ public final class App {
     // k71 - mana orb percent
     // k90 - leaderboard percent
     // k20 - practice percent
-    // k25 - is demon?
-    // k76 - type of demon (6=extreme?)
+    // k25 - is vDemon?
+    // k76 - type of vDemon (6=extreme?)
     // k2 - name of level
     // k3 - description (in base 64)
 
-    public static void main(String[] args) throws IOException, DataFormatException, GeneralSecurityException {
+    public static void main(String[] args) throws IOException, DataFormatException, GeneralSecurityException,
+            URISyntaxException, BadLocationException, InterruptedException {
 
         Dimension screen = Toolkit.getDefaultToolkit().getScreenSize();
 
@@ -91,7 +94,8 @@ public final class App {
                 .toURL()).getScaledInstance(64, 64, Image.SCALE_AREA_AVERAGING));
         frame.setVisible(true);
 
-        String savePath = System.getenv("LOCALAPPDATA") + "\\GeometryDash\\CCGameManager.dat";
+        String savePath = System.getenv("LOCALAPPDATA") + "\\GeometryDash\\CCGameManager2.dat";
+
         long totalStartTime = System.currentTimeMillis();
         explainer.setText("Loading Save File...");
         progressBar.setValue(20);
@@ -121,6 +125,9 @@ public final class App {
         System.out.println("Looking for your completed levels in save file....");
         startTime = System.currentTimeMillis();
         List<String> userCompletedIDs = saveLooker.parseSave(dCrip);
+        for (String string : userCompletedIDs) {
+            System.out.println(string);
+        }
         System.out.println("Found " + userCompletedIDs.size() + " completed levels in "
                 + ((System.currentTimeMillis() - startTime) / 1000) + " seconds");
         System.out.println();
@@ -136,11 +143,22 @@ public final class App {
         System.out.println();
 
         ArrayList<Demon> userCompletedDemons = new ArrayList<>();
+        ArrayList<Demon> unratedExtremes = new ArrayList<>();
+        ArrayList<Demon> userExtremons = new ArrayList<>();
         FileWriter fw = new FileWriter(new File("List.txt"));
         for (String ID : userCompletedIDs) {
             if (demonLookup.containsKey(ID)) {
-                userCompletedDemons.add(demonLookup.get(ID));
 
+                if (demonLookup.get(ID).diffRating > 0) {
+                    userCompletedDemons.add(demonLookup.get(ID));
+
+                } else if (demonLookup.get(ID).demonType.equals("Extreme Demon")) {
+                    System.out.println("Unrated Extreme - " + demonLookup.get(ID).name);
+                    unratedExtremes.add(demonLookup.get(ID));
+                }
+                if (demonLookup.get(ID).demonType.equals("Extreme Demon")) {
+                    userExtremons.add(demonLookup.get(ID));
+                }
             }
 
         }
@@ -154,6 +172,82 @@ public final class App {
                 return Double.compare(o2.preciseDiffRating, o1.preciseDiffRating);
             }
         });
+        Document allDemonHtml = AllRatedSurveyor.getHtml();
+        Element list = allDemonHtml.getElementsByClass("list").get(0);
+        System.out.println(list.getElementsMatchingText("204.6"));
+        // puts unrated extremons in place
+        for (Demon vDemon : unratedExtremes) {
+            for (int lvl = 0; lvl < userCompletedDemons.size(); lvl++) {
+                if (userCompletedDemons.get(lvl).demonType.equals("Extreme Demon")) {
+
+                    int homePlacement = AllRatedSurveyor.getPlacement(list, userCompletedDemons.get(lvl).name);
+
+                    int visitingPlacement = AllRatedSurveyor.getPlacement(list, vDemon.name);
+                    if (homePlacement > visitingPlacement) { // if it belongs at tthe top then end loop
+                        System.out.println("#" + visitingPlacement + " - " + vDemon.name + " is harder than #"
+                                + homePlacement + " - " + userCompletedDemons.get(lvl).name);
+
+                        vDemon.preciseDiffRating = userCompletedDemons.get(lvl).preciseDiffRating;
+                        userCompletedDemons.add(lvl, vDemon);
+                        lvl = userCompletedDemons.size();
+
+                    }
+                }
+            }
+        }
+        // makes extremeons more accurate in place value dude !
+        for (Demon vDemon : userExtremons) {
+            int startingIndex = userCompletedDemons.indexOf(vDemon);
+            userCompletedDemons.remove(vDemon);
+            for (int lvl = 0; lvl < userCompletedDemons.size(); lvl++) {
+                if (userCompletedDemons.get(lvl).demonType.equals("Extreme Demon")) {
+
+                    int homePlacement = AllRatedSurveyor.getPlacement(list, userCompletedDemons.get(lvl).name);
+
+                    int visitingPlacement = AllRatedSurveyor.getPlacement(list, vDemon.name);
+
+                    if (homePlacement > visitingPlacement) { // if the visiting demon is harder
+                        System.out.println("#" + visitingPlacement + " - " + vDemon.name + " is harder than #"
+                                + homePlacement + " - " + userCompletedDemons.get(lvl).name);
+                        if (vDemon.preciseDiffRating == 0) {
+                            vDemon.preciseDiffRating = userCompletedDemons.get(lvl).preciseDiffRating;
+                        }
+                        // System.out.print("Placing between "
+                        // + (lvl != 0 ? userCompletedDemons.get(lvl - 1).name + " (" + (lvl - 1) + ") "
+                        // : ""));
+                        // System.out.println(" and " + userCompletedDemons.get(lvl).name + " (" + (lvl)
+                        // + ")");
+                        userCompletedDemons.remove(vDemon);
+                        // System.out.print("Now placing between "
+                        // + (lvl != 0 ? userCompletedDemons.get(lvl - 1).name + " (" + (lvl - 1) + ") "
+                        // : ""));
+                        // System.out.println(" and " + userCompletedDemons.get(lvl).name + " (" + (lvl)
+                        // + ")");
+                        int testy = 0;
+                        if (lvl != 0) {
+                            // testy = lvl - 1;
+                        }
+                        userCompletedDemons.add(lvl, vDemon);
+                        if (userCompletedDemons.get(0).name.equals("Aquatic Auroras")) {
+                            System.out.println("saulgood");
+                        } else {
+                            System.out.println("WTF DUDE!!!!");
+                            System.out.println(lvl);
+                            System.out.println(userCompletedDemons.get(lvl).name);
+                            System.exit(0);
+                        }
+                        lvl = userCompletedDemons.size();
+
+                    }
+                } else if (!(lvl + 1 < userCompletedDemons.size())) {
+                    System.out.println(vDemon.name + " was in the correct space");
+                    userCompletedDemons.add(startingIndex, vDemon);
+                    lvl = userCompletedDemons.size();
+                }
+
+            }
+
+        }
         Demon d;
         String spaces = "                                                           ";
         fw.write("#     Level Name             Demon Type      GDDL Difficulty\n");

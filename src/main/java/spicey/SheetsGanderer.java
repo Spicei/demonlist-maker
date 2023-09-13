@@ -72,6 +72,10 @@ public class SheetsGanderer {
                                 currDemon = new Demon(list.get(0), list.get(1), list.get(2), list.get(3), list.get(4),
                                                 Integer.parseInt(list.get(5)), Double.parseDouble(list.get(6)));
                                 demonLookup.put(currDemon.levelID, currDemon);
+                        } else if (list.get(5).equals("unrated") && list.get(3).equals("Extreme Demon")) {
+                                currDemon = new Demon(list.get(0), list.get(1), list.get(2), list.get(3), list.get(4),
+                                                0, 0);
+                                demonLookup.put(currDemon.levelID, currDemon);
                         }
 
                 }

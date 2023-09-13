@@ -3,3 +3,6 @@ List.txt
 src/main/java/spicey/TopSecret.java
 demonlist-maker.jar
 gdol.db
+$filePath${Calendar.getInstance().timeInMillis}.html
+src/main/java/spicey/PhantomJsUtils.java
+target/classes/spicey/PhantomJsUtils.class
