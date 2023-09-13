@@ -6,3 +6,5 @@ gdol.db
 $filePath${Calendar.getInstance().timeInMillis}.html
 src/main/java/spicey/PhantomJsUtils.java
 target/classes/spicey/PhantomJsUtils.class
+chromedriver-win64/chromedriver.exe
+chromedriver-win64/LICENSE.chromedriver

@@ -1,14 +1,10 @@
 package spicey;
 
-import java.io.File;
 import java.io.IOException;
 import java.security.GeneralSecurityException;
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
-import java.util.Scanner;
-
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 
@@ -20,17 +16,13 @@ import com.google.api.client.json.JsonFactory;
 import com.google.api.client.json.gson.GsonFactory;
 import com.google.api.services.sheets.v4.Sheets;
 import com.google.api.services.sheets.v4.SheetsRequestInitializer;
-import com.google.api.services.sheets.v4.SheetsScopes;
 
 public class SheetsGanderer {
         private static final String APPLICATION_NAME = "MyDemonlist";
         private static String API_KEY = new TopSecret().getKey();
         private static final JsonFactory JSON_FACTORY = GsonFactory.getDefaultInstance();
-        private static final String TOKENS_DIRECTORY_PATH = "tokens";
         private static final String SPREADSHEET_ID = "1xaMERl70vzr8q9MqElr4YethnV15EOe8oL1UV9LLljc";
         SheetsRequestInitializer REQUEST_INITIALIZER = new SheetsRequestInitializer(API_KEY);
-        private static final List<String> SCOPES = Collections.singletonList(SheetsScopes.SPREADSHEETS);
-        private static final String CREDENTIALS_FILE_PATH = "credentials.json";
 
         public HashMap<String, Demon> parseSheet() throws GeneralSecurityException, IOException {
 
@@ -58,7 +50,7 @@ public class SheetsGanderer {
                                         .values()
                                         .get(SPREADSHEET_ID, datRange).execute().get("values"));
                 } catch (Exception e) {
-                        System.out.println(e.getMessage());
+                        System.out.println(e);
                         JOptionPane.showMessageDialog(new JFrame(),
                                         "Request to google timed out, keep trying it will work eventually lol.");
                         System.exit(0);

@@ -125,9 +125,7 @@ public final class App {
         System.out.println("Looking for your completed levels in save file....");
         startTime = System.currentTimeMillis();
         List<String> userCompletedIDs = saveLooker.parseSave(dCrip);
-        for (String string : userCompletedIDs) {
-            System.out.println(string);
-        }
+
         System.out.println("Found " + userCompletedIDs.size() + " completed levels in "
                 + ((System.currentTimeMillis() - startTime) / 1000) + " seconds");
         System.out.println();
@@ -172,9 +170,17 @@ public final class App {
                 return Double.compare(o2.preciseDiffRating, o1.preciseDiffRating);
             }
         });
-        Document allDemonHtml = AllRatedSurveyor.getHtml();
+        Document allDemonHtml = null;
+        try {
+            allDemonHtml = AllRatedSurveyor.getHtml();
+        } catch (Exception e) {
+            System.out.println(e);
+            JOptionPane.showMessageDialog(null, "sum shit went wrong with the aredl website");
+            JOptionPane.showMessageDialog(null, e);
+        }
+
         Element list = allDemonHtml.getElementsByClass("list").get(0);
-        System.out.println(list.getElementsMatchingText("204.6"));
+
         // puts unrated extremons in place
         for (Demon vDemon : unratedExtremes) {
             for (int lvl = 0; lvl < userCompletedDemons.size(); lvl++) {
@@ -212,30 +218,9 @@ public final class App {
                         if (vDemon.preciseDiffRating == 0) {
                             vDemon.preciseDiffRating = userCompletedDemons.get(lvl).preciseDiffRating;
                         }
-                        // System.out.print("Placing between "
-                        // + (lvl != 0 ? userCompletedDemons.get(lvl - 1).name + " (" + (lvl - 1) + ") "
-                        // : ""));
-                        // System.out.println(" and " + userCompletedDemons.get(lvl).name + " (" + (lvl)
-                        // + ")");
-                        userCompletedDemons.remove(vDemon);
-                        // System.out.print("Now placing between "
-                        // + (lvl != 0 ? userCompletedDemons.get(lvl - 1).name + " (" + (lvl - 1) + ") "
-                        // : ""));
-                        // System.out.println(" and " + userCompletedDemons.get(lvl).name + " (" + (lvl)
-                        // + ")");
-                        int testy = 0;
-                        if (lvl != 0) {
-                            // testy = lvl - 1;
-                        }
+
                         userCompletedDemons.add(lvl, vDemon);
-                        if (userCompletedDemons.get(0).name.equals("Aquatic Auroras")) {
-                            System.out.println("saulgood");
-                        } else {
-                            System.out.println("WTF DUDE!!!!");
-                            System.out.println(lvl);
-                            System.out.println(userCompletedDemons.get(lvl).name);
-                            System.exit(0);
-                        }
+
                         lvl = userCompletedDemons.size();
 
                     }
